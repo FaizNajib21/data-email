@@ -3,6 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: left;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
     <title>Edit User</title>
 </head>
 <body>
@@ -63,7 +100,7 @@ while($user_data = mysqli_fetch_array($result)) {
     <input type="file" name="foto" accept="image/*"><br>
 
     <!-- Display existing photo -->
-    <img src="uploads/<?php echo $foto;?>" height='50' width='50'><br>
+    <img src="uploads/<?php echo $foto;?>" widht='100' height='100'><br>
 
     <input type="submit" name="update" value="Update">
 </form>
