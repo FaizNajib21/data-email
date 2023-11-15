@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1d7874;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table:hover {
+    transform: translate3d(5px);
+    transition: 0.3s ease; 
+}
+
+.editBtn,
+.hapusBtn {
+    background-color: #1d7874;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Efek hover pada tombol */
+.editBtn:hover,
+.hapusBtn:hover {
+    background-color: #155d55;
+}
+
+/* Ruang antara tombol Edit dan Hapus */
+.editBtn + .hapusBtn {
+    margin-left: 5px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1d7874;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+#tambahBtn {
+    background-color: #1d7874;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 695px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#tambahBtn:hover {
+    background-color: #155c58;
+}
